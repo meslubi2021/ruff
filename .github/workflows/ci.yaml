@@ -30,7 +30,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: tj-actions/changed-files@v40
+      - uses: tj-actions/changed-files@v41
         id: changed
         with:
           files_yaml: |
@@ -191,7 +191,7 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         name: Download comparison Ruff binary
         id: ruff-target
         with:
@@ -391,7 +391,7 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         name: Download development ruff binary
         id: ruff-target
         with:
